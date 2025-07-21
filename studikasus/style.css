@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(img/toko.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #ffffff; */
+}
+
+body.create{
+    justify-content: center;
+}
+
+body.create form{
+    justify-content: center;
+    background-color: #ffffff; /* Latar belakang form */
+    padding: 20px 30px;
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    width: 100%;
+    max-width: 400px;
+    margin-left: 474px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.table {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Table header styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center; /* Menyelaraskan teks di tengah secara horizontal */
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+    text-align: center; /* Menyelaraskan teks di tengah secara horizontal */
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 14px;
+    vertical-align: middle; /* Menyelaraskan teks di tengah secara vertikal */
+}
+
+/* Table body styles */
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center; /* Menyelaraskan teks di tengah secara horizontal */
+    vertical-align: middle; /* Menyelaraskan teks di tengah secara vertikal */
+}
+
+/* Zebra striping for rows */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action buttons */
+a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #546dff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Add button */
+.table a[href="form.php"] {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table a[href="form.php"]:hover {
+    background-color: #218838;
+}
+
+.table a[name="edit"] {
+    color: white;
+    background-color: #007bff;
+    padding: 0.3rem 0.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.table a[name="edit"]:hover {
+    background-color: #0056b3;
+}
+
+.table a[name="hapus"] {
+    color: white;
+    background-color: #dc3545;
+    padding: 0.3rem 0.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.table a[name="hapus"]:hover {
+    background-color: #c82333;
+}
+
+.cari {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Pastikan item sejajar secara vertikal */
+    margin-bottom: 1rem;
+}
+
+.cari input[type="text"] {
+    width: 60%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 0.5rem;
+    font-size: 1rem; /* Ukuran font yang sama dengan tombol */
+    height: 2.5rem; /* Sesuaikan tinggi agar sama dengan tombol */
+}
+
+.cari button {
+    padding: 0 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2.5rem; /* Tinggi yang sama dengan input */
+    display: flex;
+    align-items: center; /* Untuk menyelaraskan ikon di dalam tombol */
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.cari button:hover {
+    background-color: #0056b3;
+}
+
+header {
+    background:rgba(250, 208, 239, 0.45);
+
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+header h3 {
+    color: white;
+}
+
+nav {
+    background:rgba(250, 208, 239, 0.45);    
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center; /* Pusatkan teks */
+    flex: 1; /* Setiap elemen memiliki lebar yang sama */
+    padding: 0.5rem 0; /* Tambahkan padding untuk klik area lebih besar */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+}
+
+
+.container {
+    padding: 2rem;
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    background-color: whitesmoke;
+}
+.product img {
+    justify-content: center;
+    /* display: flex; */
+    max-width: 10%;
+    height: auto;
+}
+.product h3 {
+    margin: 0.5rem 0;
+}
+.product p {
+    color: #555;
+}
+.product button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.product button:hover {
+    background-color: #218838;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* Styling input */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Efek fokus pada input */
+input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Tombol Kirim dan Ulang */
+.submit {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #007BFF; /* Warna tombol */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna tombol saat di-hover */
+}
+
+/* Tombol reset */
+button[name="reset"] {
+    background-color: #dc3545;
+}
+
+button[name="reset"]:hover {
+    background-color: #bd2130;
+}
+
+h1 {
+    color: #333;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+h2{
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 400px;
+}
+
